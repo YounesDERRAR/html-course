@@ -8,6 +8,13 @@
   <body>
     <header>
       <h1>Be Fat Shop</h1>
+      <nav>
+        <ul>
+          <li><a href="#Qui sommes nous">Qui sommes nous?</a></li>
+          <li><a href="#Menu">Notre Menu</a></li>
+          <li><a href="#Contact">Commandez</a></li>
+        </ul>
+      </nav>
     </header>
     <section>
       <p>
@@ -30,7 +37,7 @@
       </p>
     </section>
     <section>
-      <p>
+      <p id="Qui sommes nous">
         <b>Découvrez Be Fat Shop, le temple du burger gourmet !</b> <br /><img
           src="Assets/s1.jpg"
           alt="Staff1"
@@ -48,6 +55,8 @@
           visite un moment mémorable."</i
         >
       </p>
+      <p id="Menu"><b>Notre menu Burger!</b> <br /></p>
+
       <div>
         <h5>Burger Classique</h5>
         <br />
@@ -103,7 +112,7 @@
       </div>
     </section>
     <section>
-      <h5>Contact US and ask for your Burger</h5>
+      <h5 id="Contact">Contact US and ask for your Burger</h5>
       <form action="/traitement_formulaire" method="post">
         <label for="nom">Nom complet :</label>
         <input type="text" id="nom" name="nom" required /><br /><br />
