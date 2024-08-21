@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
     <header>
-      <h1>Be Fat Shop</h1>
-      <nav>
-        <ul>
+      <nav class="topend">
+        <h1 class="topend">Be Fat Shop</h1>
+        <ul class="topend">
           <li><a href="#Qui sommes nous">Qui sommes nous?</a></li>
           <li><a href="#Menu">Notre Menu</a></li>
           <li><a href="#Contact">Commandez</a></li>
         </ul>
       </nav>
     </header>
-    <section>
+    <section id="s1">
       <p>
         <i
           >"Chez Be Fat Shop, nous réinventons le burger avec des ingrédients de
@@ -36,25 +40,31 @@
         >
       </p>
     </section>
-    <section>
+    <section id="s2">
       <p id="Qui sommes nous">
         <b>Découvrez Be Fat Shop, le temple du burger gourmet !</b> <br /><img
           src="Assets/s1.jpg"
           alt="Staff1"
+          id="s2a"
         /><i
           >"Chez Be Fat Shop, chaque burger est une œuvre d'art culinaire,
           élaborée avec des ingrédients de premier choix et une passion
-          inégalée." <br /><img src="Assets/S2.jpg" alt="Staff2" />"Nous croyons
-          que l'excellence vient de l'attention portée à chaque détail, et cela
-          se reflète dans nos plats, tout comme dans l'ambiance chaleureuse de
-          notre restaurant. Mais l'essence de Be Fat Shop, ce sont avant tout
-          les personnes qui y travaillent. Jetez un œil aux photos de notre
-          équipe dynamique et souriante : ce sont eux qui, chaque jour, mettent
-          tout leur cœur à vous offrir une expérience unique. Que ce soit en
-          cuisine ou en salle, notre personnel est dévoué à faire de votre
-          visite un moment mémorable."</i
+          inégalée." <br /><img
+            src="Assets/S2.jpg"
+            alt="Staff2"
+            id="s2b"
+          />"Nous croyons que l'excellence vient de l'attention portée à chaque
+          détail, et cela se reflète dans nos plats, tout comme dans l'ambiance
+          chaleureuse de notre restaurant. Mais l'essence de Be Fat Shop, ce
+          sont avant tout les personnes qui y travaillent. Jetez un œil aux
+          photos de notre équipe dynamique et souriante : ce sont eux qui,
+          chaque jour, mettent tout leur cœur à vous offrir une expérience
+          unique. Que ce soit en cuisine ou en salle, notre personnel est dévoué
+          à faire de votre visite un moment mémorable."</i
         >
       </p>
+    </section>
+    <section id="s3">
       <p id="Menu"><b>Notre menu Burger!</b> <br /></p>
 
       <div>
@@ -111,7 +121,7 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section id="s4">
       <h5 id="Contact">Contact US and ask for your Burger</h5>
       <form action="/traitement_formulaire" method="post">
         <label for="nom">Nom complet :</label>
@@ -149,7 +159,7 @@
       </form>
     </section>
 
-    <footer>
+    <footer class="topend">
       <p>&copy; 2024 Be Fat Shop. Tous droits réservés.</p>
       <p>Numéro de téléphone : <a href="tel:+123456789">+12 345 6789</a></p>
     </footer>
