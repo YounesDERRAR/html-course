@@ -14,7 +14,7 @@
       <nav class="topend">
         <h1 class="topend">Be Fat Shop</h1>
         <ul class="topend">
-          <li><a href="#Qui sommes nous">Qui sommes nous?</a></li>
+          <li><a href="#Qui-sommes-nous">Qui sommes nous?</a></li>
           <li><a href="#Menu">Notre Menu</a></li>
           <li><a href="#Contact">Commandez</a></li>
         </ul>
@@ -41,7 +41,7 @@
       </p>
     </section>
     <section id="s2">
-      <p id="Qui sommes nous">
+      <p id="Qui-sommes-nous">
         <b>Découvrez Be Fat Shop, le temple du burger gourmet !</b> <br /><img
           src="Assets/s1.jpg"
           alt="Staff1"
@@ -65,11 +65,10 @@
       </p>
     </section>
     <section id="s3">
-      <p id="Menu"><b>Notre menu Burger!</b> <br /></p>
+      <p id="Menu"><b>Notre menu Burger!</b></p>
 
-      <div>
+      <div class="recette">
         <h5>Burger Classique</h5>
-        <br />
         <ul>
           <li>Pain à burger</li>
           <li>Steak haché de bœuf</li>
@@ -80,9 +79,8 @@
           <li>Sauce ketchup et mayonnaise</li>
         </ul>
       </div>
-      <div>
+      <div class="recette">
         <h5>Burger BBQ</h5>
-        <br />
         <ul>
           <li>Pain à burger</li>
           <li>Steak haché de bœuf</li>
@@ -93,9 +91,8 @@
           <li>Laitue</li>
         </ul>
       </div>
-      <div>
+      <div class="recette">
         <h5>Burger Végétarien</h5>
-        <br />
         <ul>
           <li>Pain à burger</li>
           <li>Galette de légumes (comme pois chiches ou haricots noirs)</li>
@@ -106,9 +103,8 @@
           <li>Sauce au yaourt et herbes</li>
         </ul>
       </div>
-      <div>
+      <div class="recette">
         <h5>Burger Tex-Mex</h5>
-        <br />
         <ul>
           <li>Pain à burger</li>
           <li>Steak haché de bœuf épicé</li>
@@ -125,18 +121,13 @@
       <h5 id="Contact">Contact US and ask for your Burger</h5>
       <form action="/traitement_formulaire" method="post">
         <label for="nom">Nom complet :</label>
-        <input type="text" id="nom" name="nom" required /><br /><br />
+        <input type="text" id="nom" name="nom" required /><br />
 
         <label for="telephone">Numéro de téléphone :</label>
-        <input
-          type="tel"
-          id="telephone"
-          name="telephone"
-          required
-        /><br /><br />
+        <input type="tel" id="telephone" name="telephone" required /><br />
 
         <label for="adresse">Adresse :</label>
-        <input type="text" id="adresse" name="adresse" required /><br /><br />
+        <input type="text" id="adresse" name="adresse" required /><br />
 
         <label for="type_commande">Type de commande :</label>
         <select id="type_commande" name="type_commande" required>
@@ -144,7 +135,7 @@
           <option value="burger_bbq">Burger BBQ</option>
           <option value="burger_vegetarien">Burger Végétarien</option>
           <option value="burger_tex_mex">Burger Tex-Mex</option></select
-        ><br /><br />
+        ><br />
 
         <label for="quantite">Quantité :</label>
         <input
@@ -153,9 +144,9 @@
           name="quantite"
           min="1"
           required
-        /><br /><br />
+        /><br />
 
-        <input type="submit" value="Envoyer la commande" />
+        <input type="submit" id="Boutton" value="Envoyer la commande" />
       </form>
     </section>
 

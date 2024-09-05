@@ -28,19 +28,28 @@ nav ul {
   font-size: small;
 }
 #s2 {
-  background-color: rgb(155, 130, 113);
+  background-color: rgb(146, 106, 79);
   font-size: small;
+  display: flex;
+  align-items: center;
 }
 #s3 {
-  background-color: rgb(146, 106, 79);
+  background-color: rgb(155, 138, 127);
   font-size: small;
 }
 #s4 {
-  background-color: rgb(150, 91, 53);
+  background-color: rgb(146, 106, 79);
   font-size: small;
 }
-footer {
-  margin-top: 30px;
+section,
+h5,
+b {
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  align-items: center;
 }
 #s1 img {
   width: 100px;
@@ -50,10 +59,56 @@ footer {
 #s2a {
   width: 200px;
   height: auto;
+  border: 5px solid rgb(204, 121, 20);
   border-radius: 10%;
+  margin-right: 10px;
 }
 #s2b {
   width: 300px;
   height: auto;
+  border: 5px solid rgb(204, 121, 20);
   border-radius: 10%;
+  margin-right: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#Boutton {
+  background-color: rgb(204, 121, 20);
+  color: white;
+  font-size: 16px;
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Boutton:hover {
+  background-color: white;
+  color: rgb(204, 121, 20);
+}
+.recette {
+  display: flex;
+  justify-content: space-between;
+}
+.recette ul {
+  flex: 1;
+  margin: 10px;
+  height: 350px;
+  background-color: rgb(226, 112, 18);
+}
+#Menu {
+  background-color: rgb(226, 112, 18);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
 }
