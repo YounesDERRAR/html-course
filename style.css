@@ -30,13 +30,21 @@ nav ul {
 #s2 {
   background-color: rgb(146, 106, 79);
   font-size: small;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 45% 45%;
 }
 #s3 {
   background-color: rgb(155, 138, 127);
   font-size: small;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
 }
+#s3 .recette h5 {
+  grid-area: 1/2/2/3;
+}
+
 #s4 {
   background-color: rgb(146, 106, 79);
   font-size: small;
@@ -56,12 +64,25 @@ section {
   height: 100px;
   border-radius: 50%;
 }
+#Qui-sommes-nous {
+  padding-bottom: 20px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
 #s2a {
   width: 200px;
   height: auto;
   border: 5px solid rgb(204, 121, 20);
   border-radius: 10%;
   margin-right: 10px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  justify-self: center;
+}
+#stxt1 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
 }
 #s2b {
   width: 300px;
@@ -69,6 +90,14 @@ section {
   border: 5px solid rgb(204, 121, 20);
   border-radius: 10%;
   margin-right: 10px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+}
+#stxt2 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
 }
 form {
   display: flex;
@@ -99,16 +128,22 @@ form {
   justify-content: space-between;
 }
 .recette ul {
-  flex: 1;
   margin: 10px;
   height: 350px;
   background-color: rgb(226, 112, 18);
+  list-style-type: disc;
+  padding-left: 20px;
+  grid-area: 2/2/6/6;
 }
+
 #Menu {
   background-color: rgb(226, 112, 18);
   display: inline-block;
   padding: 20px;
   border-radius: 50%;
-  text-align: center;
   font-size: 24px;
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
